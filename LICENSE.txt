@@ -1,0 +1,33 @@
+LuxoraICONS License (Custom MIT + Restrictions)
+
+Copyright (c) 2025 LuxoraICONS
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this icon library and associated documentation files (the "Icons"), to use,
+copy, modify, and integrate the Icons into personal or commercial projects,
+subject to the following conditions:
+
+1. Attribution must be given to "LuxoraICONS" in any public use or
+   distribution of the Icons (e.g., in documentation, about page, or credits).
+
+2. The Icons may be freely used, modified, and distributed as part of any
+   project (personal, educational, or commercial), provided they are not
+   sold or resold as standalone icons or in an icon pack.
+
+3. The Icons may not be redistributed, sublicensed, or published as a
+   separate or competing icon library, toolkit, or design system — whether
+   free or paid.
+
+4. The Icons may not be rebranded, misrepresented, or distributed under a
+   different name. "LuxoraICONS" must remain the original source name.
+
+5. The name "LuxoraICONS" is a trademark of its creator and may not be used
+   in advertising, branding, or promotion without prior written permission.
+
+THE SOFTWARE AND ICONS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR
+OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE ICONS OR THE USE
+OR OTHER DEALINGS IN THE ICONS.

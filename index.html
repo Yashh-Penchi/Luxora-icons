@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxora Icon System</title>
+    <link rel="stylesheet" href="./cssFiles/style.css" />
+    <link rel="stylesheet" href="./cssFiles/luxoraIcons.css" />
+  </head>
+  <body>
+    <div id="goToTopBtn">Go To Top <i class="lu-navigation-arrow-bold-svgrepo-com-icon"></i></div>
+
+    <!-- Header -->
+    <header id="header" class="headerMain">
+      <div
+        id="bottom-lineHeader"
+        style="position: absolute; bottom: 0; width: 100%; background-color: #ececec; left: 0"></div>
+      <h1>Luxora ICON <i class="lu-heart-icon"></i></h1>
+      <nav>
+        <ul>
+          <li onclick="window.scroll(0, 0,)"><a href="#home">Home</a></li>
+          <li
+            onclick="document.getElementById('aboutPopup').style.display='flex'; setTimeout(() => { document.getElementById('aboutPopup').style.opacity = '1'; }, 200);">
+            <a href="#about">About Us</a>
+          </li>
+          <li
+            onclick="document.getElementById('licensePopup').style.display='flex'; setTimeout(() => { document.getElementById('licensePopup').style.opacity = '1'; }, 200);">
+            <a href="#about">Licence</a>
+          </li>
+          <li
+            onclick="document.getElementById('contactPopup').style.display='flex'; setTimeout(() => { document.getElementById('contactPopup').style.opacity = '1'; }, 200);">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="nav2">
+        <li id="themeToggle" class="themeToggle" onclick="toggleDarkMode()">
+          <a href="#" onclick="event.preventDefault()"><i class="lu-brightness-contrast-icon"></i></a>
+        </li>
+        <!-- CDN Popup Open Second Button -->
+        <!-- <li id="cdnOpenBtn" onclick="document.querySelector('.cdnPopup-modal').style.display='flex'; setTimeout(() => { document.querySelector('.cdnPopup-modal').style.opacity = '1'; }, 200);">
+          <a href="#" onclick="event.preventDefault()">CDN</a>
+        </li> -->
+        <li id="gitHubOnHeader" class="gitHub">
+          <a href="#"><i class="lu-github-icon"></i></a>
+        </li>
+        <li id="linkedInOnHeader" class="linkedIn">
+          <a href="https://www.linkedin.com/in/yashh-lodha/" target="_blank"><i class="lu-linkedin2-icon"></i></a>
+        </li>
+        <li id="supportUs" class="supportUs"><a href="#">Support Us</a></li>
+      </div>
+    </header>
+
+
+    <!-- CDN Popup -->
+       <div id="cdnPopup" class="cdnPopup-modal">
+      <div class="cdnPopup-content">
+        <div id="cdnLinkContainer">
+          <code>
+            <span class="cdnURL_Design" style="color: #88009d;">&lt;link </span>rel='<span class="cdnURL_Design" style="color: rgb(21, 93, 180);">stylesheet</span>' href='<span class="cdnURL_Design" id="cdnURL" style="color: #17426c; background: #f4f4f4; padding-block: 0.1rem;"></span>'<span class="cdnURL_Design" style="color: #88009d;">&gt;</span>   
+          </code>
+          <button id="cdnCopyBtn"><i class="lu-copy-icon"></i></button>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <!-- About Us Popup -->
+    <div id="aboutPopup" class="about-modal">
+      <div class="about-content">
+        <h2>About Us</h2>
+        <p>
+          LuxoraICONS is a modern, open-source icon library crafted with precision. Our mission is to empower designers,
+          developers, and startups with lightweight, scalable, and pixel-perfect icons that bring creativity to life.
+        </p>
+
+        <h3>Why LuxoraICONS?</h3>
+        <ul>
+          <li>🎯 <b>Open-Source & Free</b> – Use in personal or commercial projects with ease.</li>
+          <li>⚡ <b>Lightweight & Fast</b> – Optimized icons that won’t slow you down.</li>
+          <li>🎨 <b>Pixel Perfect & Vector Consistent</b> – Icons that scale beautifully.</li>
+          <li>🌍 <b>Community Driven</b> – Built for creators, supported by creators.</li>
+        </ul>
+
+        <h3>Our Vision</h3>
+        <p>
+          We believe that design should be accessible to everyone. That’s why LuxoraICONS is open-source and free — so
+          creators around the globe can build products without worrying about design assets.
+        </p>
+
+        <h3>Our Mission</h3>
+        <p>
+          To maintain a growing collection of high-quality icons, stay consistent across platforms, and inspire
+          designers with tools that save time and effort.
+        </p>
+
+        <h3>Join the Community</h3>
+        <p>
+          We’re more than just an icon library — we’re a community of passionate creators. Contribute on GitHub, share
+          feedback, or support us to help LuxoraICONS grow stronger.
+        </p>
+
+        <button
+          class="about-close-btn"
+          onclick="document.getElementById('aboutPopup').style.opacity='0'; setTimeout(() => { document.getElementById('aboutPopup').style.display='none' }, 200);">
+          Close
+        </button>
+      </div>
+    </div>
+
+    <!-- License Agreement Popup -->
+    <div id="licensePopup" class="license-modal">
+      <div class="license-content">
+        <h2>License Agreement</h2>
+        <p>
+          LuxoraICONS is licensed under the
+          <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>
+          and all rights of products are reserved for LuxoraICONS.
+        </p>
+
+        <h3>✅ Permissions</h3>
+        <ul>
+          <li>All icons can be <b>downloaded and used for free</b></li>
+          <li>Allowed for <b>commercial and non-commercial projects</b></li>
+          <li><b>Modification</b> of icons is permitted</li>
+          <li><b>Distribution</b> with attribution or credit to LuxoraICONS</li>
+        </ul>
+
+        <h3>🚫 Prohibitions</h3>
+        <ul>
+          <li>❌ <b>Trademark use</b> of “LuxoraICONS” without permission</li>
+          <li>❌ <b>Re-selling</b> icons in any form (paid packs, marketplaces, etc.)</li>
+          <li>❌ Using icons to <b>replicate a competing icon library</b> without significant changes</li>
+        </ul>
+
+        <button
+          class="license-close-btn"
+          onclick="document.getElementById('licensePopup').style.opacity = '0'; setTimeout(() => { document.getElementById('licensePopup').style.display='none' }, 200);">
+          Close
+        </button>
+      </div>
+    </div>
+
+    <!-- Contact Us Popup -->
+    <div id="contactPopup" class="contact-modal">
+      <div class="contact-content">
+        <h2>Contact LuxoraICONS</h2>
+        <p>We love hearing from you! Share feedback, questions, or just say hi. <span>💌</span></p>
+
+        <form id="contactForm" class="contact-form">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <div id="nameError" class="error-msg">Please enter your name.</div>
+
+          <input type="email" id="email" placeholder="Your Email" required />
+          <div id="emailError" class="error-msg">Please enter a valid email.</div>
+
+          <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+          <div id="messageError" class="error-msg">Message cannot be empty.</div>
+
+          <button type="submit"><i style="color: #fff" class="ri-send-plane-line"></i> Send Message</button>
+        </form>
+
+        <div class="social-icons">
+          <a href="https://instagram.com/21__Yashh" target="_blank"><i class="lu-github-icon"></i></a>
+          <a href="#" target="_blank"><i class="lu-instagram-icon"></i></a>
+          <a href="https://twitter.com/21__Yashh" target="_blank"><i class="lu-twitter-icon"></i></a>
+          <a href="https://www.linkedin.com/in/yashh-lodha/" target="_blank"><i class="lu-linkedin-icon"></i></a>
+          <a href="mailto:iyash321@gmail.com"><i class="lu-mail-icon"></i></a>
+        </div>
+
+        <button
+          class="contact-close-btn"
+          onclick="document.getElementById('contactPopup').style.opacity='0'; setTimeout(() => { document.getElementById('contactPopup').style.display='none' }, 200);">
+          Close
+        </button>
+      </div>
+    </div>
+
+    <!-- Alert Popup -->
+    <main>
+      <div id="alertPopup">
+        <h5>Sorry! Currently Unavailable</h5>
+        <p>Please try again later.</p>
+      </div>
+
+      <section class="hero">
+        <div class="container">
+          <h2>An Open-Source Icon System for Modern Creators</h2>
+          <p id="secondParaOfHero" style="font-size: 1.5rem; width: max-content; padding-left: 1rem; display: flex;
+          align-items: center;">
+            Beautiful Open-Source Icons for Everyone 
+            <button onclick="document.querySelector('.cdnPopup-modal').style.display='flex'; setTimeout(() => { document.querySelector('.cdnPopup-modal').style.opacity = '1'; }, 200); setTimeout(() => { document.querySelector('.cdnPopup-modal').style.opacity = '0'; setTimeout(() => { document.querySelector('.cdnPopup-modal').style.display = 'none'; }, 1000)  }, 10000);"><i class="lu-command-icon"></i>CDN</button>
+          </p>
+          <p style="margin-bottom: 4rem; margin-top: 1.5rem">
+            Whether you're a designer, developer, or startup – LuxoraICONS has the perfect icons for your projects.
+          </p>
+          <div class="features" style="user-select: none">
+            <span><i class="lu-crown-svgrepo-com-icon"></i> Premium Icons</span>
+            <div
+              id="featureBreakLine"
+              style="height: 100%; width: 1px; background: linear-gradient(0deg, transparent, #333, transparent)"></div>
+            <span><i class="lu-make-group-icon"> </i>Pixel Perfect</span>
+            <div
+              id="featureBreakLine"
+              style="height: 100%; width: 1px; background: linear-gradient(0deg, transparent, #333, transparent)"></div>
+            <span><i class="lu-leaf-icon"></i> Light Weight Icons</span>
+            <div
+              id="featureBreakLine"
+              style="height: 100%; width: 1px; background: linear-gradient(0deg, transparent, #333, transparent)"></div>
+            <span><i class="lu-yelp-icon"></i> Vector Consistency</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="search-section">
+        <div class="container" style="display: flex; align-items: center; justify-content: center; position: relative">
+          <i
+            class="lu-search-icon search_icon_class"
+            style="position: absolute; left: 5%; font-size: 1.5rem; transition: color ease 0.3s"></i>
+          <input type="text" id="icon-search" placeholder="Search icons..." />
+        </div>
+      </section>
+
+      <section class="icons-display">
+        <div class="container">
+          <h3>Arrows</h3>
+          <div class="icons-grid" id="arrows-icons"></div>
+
+          <h3>Files</h3>
+          <div class="icons-grid" id="files-icons"></div>
+        </div>
+      </section>
+
+      <div id="icon-popup" class="icon-popup">
+        <div class="popup-content">
+          <span class="close-button" style="user-select: none">&times;</span>
+          <div class="popup-header" style="user-select: none">
+            <i id="popup-icon-display" class="luxora-icon"></i>
+            <h4 id="popup-icon-name"></h4>
+            <button class="add-to-collection" style="display: none">
+              <i class="lu-add-circle-svgrepo-com-icon"></i>
+            </button>
+          </div>
+          <div class="popup-code-options">
+            <div class="code-example">
+              <code><i style="font-size: 1.5rem; padding-right: 10px; color:#999" class="lu-code-icon"></i> &lt;i class="<span id="popup-code-class"></span>"&gt;&lt;/i&gt;</code>
+              <button style="user-select: none" class="copy-button">Copy</button>
+            </div>
+            <div class="code-example">
+              <code><i style="font-size: 1.5rem; padding-right: 10px; color:#999" class="lu-terminal-icon"></i><span id="popup-code-unicode"></span></code>
+              <button style="user-select: none" class="copy-button">Copy</button>
+            </div>
+          </div>
+          <div class="popup-download-options" style="user-select: none">
+            <label for="icon-size">Size</label>
+            <select id="icon-size" style="user-select: none">
+              <option value="16px">16px</option>
+              <option value="24px" selected>24px</option>
+              <option value="32px">32px</option>
+              <option value="64px">64px</option>
+            </select>
+            <button onclick="customAlert()">Copy SVG</button>
+            <button onclick="customAlert()">SVG</button>
+            <button onclick="customAlert()">PNG</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer
+        style="
+          background: #f1f1f1;
+          padding: 60px 40px 30px;
+          font-family: Arial, sans-serif;
+          color: #2c3e50;
+          user-select: none;
+        ">
+        <div
+          style="
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+          ">
+          <div>
+            <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #2c3e50">
+              Explore Icons! <span style="color: red">⭑</span>
+            </h3>
+            <p style="font-size: 15px; color: #2c3e50; line-height: 1.5">
+              🎯 Premium collection of icons for your projects.
+            </p>
+            <a
+              href="#"
+              class="browseBtn"
+              style="
+                display: inline-block;
+                margin-top: 12px;
+                padding: 10px 20px;
+                font-weight: bold;
+                font-size: 14px;
+                border-radius: 6px;
+                user-select: none;
+                background: #222;
+                color: white;
+                text-decoration: none;
+                transition: 0.3s;
+              ">
+              Browse Now →
+            </a>
+          </div>
+
+          <div>
+            <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #2c3e50">
+              Features <span style="color: red">⭑</span>
+            </h3>
+            <ul style="list-style: none; padding: 0; margin: 0; line-height: 2">
+              <li style="color: #333; text-decoration: none; font-size: 15px">✔️ Pixel Perfect Quality</li>
+              <li style="color: #333; text-decoration: none; font-size: 15px">✔️ Light Weight Design</li>
+              <li style="color: #333; text-decoration: none; font-size: 15px">✔️ 100% Vector Consistency</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #000; user-select: none">
+              Support Us <span style="color: red">⭑</span>
+            </h3>
+            <p style="font-size: 15px; color: #555; line-height: 1.5">
+              💖 Love using LuxoraICONS? Support us and help keep premium icons coming!
+            </p>
+            <a
+              id="donateDtn"
+              href="#"
+              style="
+                user-select: none;
+                display: inline-block;
+                margin-top: 12px;
+                padding: 8px 30px 8px 22px;
+                font-size: 15px;
+                font-weight: bold;
+                border-radius: 6px;
+                background: #ff3c3c;
+                color: white;
+                position: relative;
+                text-decoration: none;
+                box-shadow: 0 4px 10px rgba(255, 60, 60, 0.3);
+                transition: 0.3s;
+              ">
+              <span style="font-size: 1.2rem; position: absolute">💎</span> Help Us Grow
+            </a>
+          </div>
+        </div>
+
+        <!-- Bottom strip -->
+        <div
+          style="
+            border-top: 1px solid #ddd;
+            margin-top: 40px;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+          ">
+          © 2025 LuxoraICONS | All Rights Reserved. <br />
+        </div>
+      </footer>
+    </main>
+
+    <script src="./scriptFiles/script.js"></script>
+  </body>
+</html>
