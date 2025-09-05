@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # LuxoraICONS
 
 [![License](https://img.shields.io/badge/license-Custom%20MIT%20+%20Restrictions-blue.svg)](./LICENSE)
@@ -16,6 +15,16 @@
 
 ---
 
+## 📦 CDN
+
+```html 
+<!-- Luxora CDN -->
+<link rel="stylesheet" href="(https://cdn.jsdelivr.net/gh/Yashh-Penchi/Luxora-icons/cssFiles/luxoraIcons.css)">
+```
+
+
+---
+
 ## 📦 Installation (via CDN)
 
 Add this line inside your `<head>`:
@@ -26,9 +35,9 @@ Add this line inside your `<head>`:
 
 🚀 Usage
 Use icons with the <i> tag and the provided classes:
-<i class="lux-icon lux-home"></i>
-<i class="lux-icon lux-search"></i>
-<i class="lux-icon lux-user"></i>
+<i class="lux-copy-icon lux-copy"></i>
+<i class="lux-home-icon lux-home"></i>
+<i class="lux-mic-icon lux-mic"></i>
 
 
 🏗️ About Us
@@ -40,7 +49,7 @@ Our mission is to empower designers, developers, and startups with scalable, pix
 📬 Contact
 
 Questions? Feedback?
-📧 iyash321@gmail.com [ [Mail](mailto:iyash321@gmail.com) ]
+📧 [iyash321@gmail.com](mailto:iyash321@gmail.com)
 
 
 📜 License
@@ -50,7 +59,4 @@ LuxoraICONS is licensed under a Custom MIT + Restrictions License.
 ❌ No resale / redistribution as standalone packs
 ❌ No rebranding or competing libraries
 
-=======
-# Luxora-icons
-Lightweight, accessible Icon library for web &amp; UI — 🎯 Open-Source &amp; Free, ⚡ Lightweight &amp; Fast, 🎨 Pixel Perfect &amp; Vector Consistent and framework-friendly.
->>>>>>> ab349416e642c86f5ed41a705ae08be47cbf2a69
+📜 [View Full License](./LICENSE.txt)
