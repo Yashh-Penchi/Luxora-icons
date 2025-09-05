@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LuxoraICONS
 
 [![License](https://img.shields.io/badge/license-Custom%20MIT%20+%20Restrictions-blue.svg)](./LICENSE)
@@ -49,3 +50,7 @@ LuxoraICONS is licensed under a Custom MIT + Restrictions License.
 ❌ No resale / redistribution as standalone packs
 ❌ No rebranding or competing libraries
 
+=======
+# Luxora-icons
+Lightweight, accessible Icon library for web &amp; UI — 🎯 Open-Source &amp; Free, ⚡ Lightweight &amp; Fast, 🎨 Pixel Perfect &amp; Vector Consistent and framework-friendly.
+>>>>>>> ab349416e642c86f5ed41a705ae08be47cbf2a69
