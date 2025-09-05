@@ -320,4 +320,42 @@ cdnCopyBtn.addEventListener("click", ()=> {
         });
 })
 
-// JS Validation
+// JS Form Validation
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault(); // Stop default submit (Formspree handle karega agar valid ho)
+
+  let isValid = true;
+
+  const name = document.getElementById("name");
+  const email = document.getElementById("email");
+  const message = document.getElementById("message");
+
+  const nameError = document.getElementById("nameError");
+  const emailError = document.getElementById("emailError");
+  const messageError = document.getElementById("messageError");
+
+  nameError.style.display = "none";
+  emailError.style.display = "none";
+  messageError.style.display = "none";
+
+  if (name.value.trim() === "") {
+    nameError.style.display = "block";
+    isValid = false;
+  }
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email.value.trim())) {
+    emailError.style.display = "block";
+    isValid = false;
+  }
+
+  if (message.value.trim() === "") {
+    messageError.style.display = "block";
+    isValid = false;
+  }
+
+  if (isValid) {
+    this.submit();
+  }
+});

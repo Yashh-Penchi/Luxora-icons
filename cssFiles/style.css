@@ -1055,6 +1055,9 @@ body.dark-mode i::before {
 body.dark-mode .search_icon_class::before {
   color: #000000 !important;
 }
+body.dark-mode #contact-form-P {
+  color: #ffffff !important;
+}
 
 body.dark-mode header h1,
 body.dark-mode nav ul li a,
