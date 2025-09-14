@@ -253,6 +253,7 @@ header #nav2 #supportUs a{
 }
 #secondParaOfHero button.animate{
     animation: secondParaOfHero_Btn_Animation 3s ease-in-out 1;
+    /* animation-delay: 0.3s; */
 }
 #secondParaOfHero button i{
   color: #fff;
@@ -713,6 +714,170 @@ background-clip: text;
 }
 
 
+/* Support Modal */
+.support-modal {
+  opacity: 0;
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 9995;
+  align-items: center;
+  justify-content: center;
+  transition: opacity ease 0.3s;
+  cursor: url('../Assets/icons8-cursor-48_1757880623-0-1.cur'), auto;
+}
+
+.support-content {
+  background: #fff;
+  width: 90%;
+  max-width: 650px;
+  padding: 2.5rem;
+  padding-bottom: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.support-content h2 {
+  margin-top: 0;
+  text-align: left ;
+  font-size: 22px;
+  font-weight: 600;
+  color: #2c3e50 !important;
+}
+
+.support-content p {
+  margin: 1rem 0 3rem;
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.support-body {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.support-options {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  /* align-items: center; */
+}
+
+.support-btn {
+  background: transparent;
+  color: #193d60;
+  border: 1px ridge #999 !important;
+  border: none;
+  padding: 12px 1.5rem;
+  overflow: hidden;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background ease 0.3s;
+  width: 100%;
+  max-width: 240px;
+  position: relative;
+}
+.support-btn:nth-child(1){
+  height: 7rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../Assets/coffee-cover.svg);
+}
+.support-btn:nth-child(2){
+  height: 4rem;
+  padding: 1rem;
+object-fit: cover;
+object-position: center;
+}
+.support-btn:nth-child(2) img{
+  width: 50%;
+object-fit: cover;
+object-position: center;
+}
+
+.support-btn:hover {
+  border: 1px ridge #00a3de !important;
+}
+.support-btn:hover .support-btn-hover{
+  opacity: 1;
+}
+
+.support-qr {
+  flex: 1;
+  user-select: none;
+  /* background-color: blue; */
+  text-align: center;
+}
+
+.support-qr img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  padding: 6px;
+}
+
+.support-qr p {
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 1rem;
+  text-align: center;
+  color: #555;
+}
+
+
+@media (max-width: 600px) {
+  .support-body {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.support-btn-hover{
+  padding: 1rem;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity ease 0.3s;
+}
+.support-btn-hover h4{
+  font-weight: 200;
+  color: #00a3de;
+  margin-bottom: 5px;
+}
+.support-btn-hover h5{
+  font-weight: 500;
+  color: #888;
+  opacity: 0.75;
+}
+.support-btn-hover i{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #00a3de;
+}
+
+
 
 
 /* License */
@@ -1052,11 +1217,12 @@ body.dark-mode .cdnURL_Design{
 body.dark-mode i::before {
   color: #fff !important;
 }
-body.dark-mode .search_icon_class::before {
-  color: #000000 !important;
-}
 body.dark-mode #contact-form-P {
   color: #ffffff !important;
+}
+body.dark-mode .contactFormInputs {
+  background: #333;
+  color: #fff;
 }
 
 body.dark-mode header h1,
@@ -1065,6 +1231,12 @@ body.dark-mode #nav2 i {
   color: #f5f5f5 !important;
 }
 
+body.dark-mode #icon-search {
+  background: #777;
+}
+body.dark-mode .search-section input::placeholder {
+  color: #fff;
+}
 body.dark-mode #cdnOpenBtn a, body.dark-mode .supportUs a{
   color: #fff !important;
 }
@@ -1078,6 +1250,9 @@ body.dark-mode .icons-grid{
 body.dark-mode .headerMain {
   background: #1e1e1e !important;
   border-bottom: 1px solid #333 !important;
+}
+body.dark-mode nav ul li:hover {
+  background-color: #333;
 }
 
 body.dark-mode .hero {

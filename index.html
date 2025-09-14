@@ -47,26 +47,36 @@
         <li id="linkedInOnHeader" class="linkedIn">
           <a href="https://www.linkedin.com/in/yashh-lodha/" target="_blank"><i class="lu-linkedin2-icon"></i></a>
         </li>
-        <li id="supportUs" class="supportUs"><a href="#">Support Us</a></li>
+        <li
+          id="supportUs"
+          class="supportUs"
+          onclick="document.getElementById('supportPopup').style.display = 'flex';
+setTimeout(() => { document.getElementById('supportPopup').style.opacity = '1'; }, 10);
+">
+          <a href="#" onclick="onclick='event.preventDefault()'">Support Us</a>
+        </li>
       </div>
     </header>
 
-
     <!-- CDN Popup -->
-       <div id="cdnPopup" class="cdnPopup-modal">
+    <div id="cdnPopup" class="cdnPopup-modal">
       <div class="cdnPopup-content">
         <div id="cdnLinkContainer">
           <code>
-            <span class="cdnURL_Design" style="color: #88009d;">&lt;link </span>rel='<span class="cdnURL_Design" style="color: rgb(21, 93, 180);">stylesheet</span>' href='<span class="cdnURL_Design" id="cdnURL" style="color: #17426c; background: #f4f4f4; padding-block: 0.1rem;"></span>'<span class="cdnURL_Design" style="color: #88009d;">&gt;</span>   
+            <span class="cdnURL_Design" style="color: #88009d">&lt;link </span>rel='<span
+              class="cdnURL_Design"
+              style="color: rgb(21, 93, 180)"
+              >stylesheet</span
+            >' href='<span
+              class="cdnURL_Design"
+              id="cdnURL"
+              style="color: #17426c; background: #f4f4f4; padding-block: 0.1rem"></span
+            >'<span class="cdnURL_Design" style="color: #88009d">&gt;</span>
           </code>
           <button id="cdnCopyBtn"><i class="lu-copy-icon"></i></button>
         </div>
-
       </div>
     </div>
-
-
-
 
     <!-- About Us Popup -->
     <div id="aboutPopup" class="about-modal">
@@ -117,7 +127,9 @@
         <h2>License Agreement</h2>
         <p>
           LuxoraICONS is licensed under the
-          <a href="https://github.com/Yashh-Penchi/Luxora-icons/blob/main/LICENSE.txt" target="_blank">Custom MIT + Restrictions</a>
+          <a href="https://github.com/Yashh-Penchi/Luxora-icons/blob/main/LICENSE.txt" target="_blank"
+            >Custom MIT + Restrictions</a
+          >
           and all rights of products are reserved for LuxoraICONS.
         </p>
 
@@ -144,6 +156,48 @@
       </div>
     </div>
 
+    <!-- Support / Donate Popup -->
+    <div id="supportPopup" class="support-modal">
+      <div class="support-content">
+        <h2 style="color: #2c3e50 !important">Support LuxoraICONS</h2>
+        <p>
+          Luxora Icons is a free and open-source icon library, crafted with significant time and effort. If you enjoy
+          our icons and want to see us continue to grow and add more quality designs, please consider supporting our
+          team. Your donation helps fuel our work and keeps this project thriving.
+        </p>
+        <div class="support-body">
+          <!-- Left: Buttons -->
+          <div class="support-options">
+            <button class="support-btn">
+              <a href="https://buymeacoffee.com/luxoradev" target="_blank" class="support-btn-hover">
+                <h4>Buy Me a Coffee</h4>
+                <h5>Recommended for Non-China Regions</h5>
+                <i class="lu-arrow-up-right2-icon"></i>
+              </a>
+            </button>
+            <button class="support-btn">
+              <img src="./Assets/20151025012712!PayPal.svg">
+              <a href="https://bit.ly/Yashh-PayPal" target="_blank" class="support-btn-hover">
+                <h4>Paypal</h4>
+                <h5>Support With Paypal</h5>
+                <i class="lu-arrow-up-right2-icon"></i>
+              </a>
+            </button>
+          </div>
+
+          <!-- Right: QR Code -->
+          <div class="support-qr">
+            <img src="./Assets/QR-min.png" alt="UPI QR Code" />
+            <p>
+               <!-- <span style="background-color: #2c3e500c; padding: 3px 2rem;">Name: Yash Lodha</span> <br><br> -->
+              Direct Payment -<br />
+              Scan QR to Pay via UPI
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Contact Us Popup -->
     <div id="contactPopup" class="contact-modal">
       <div class="contact-content">
@@ -151,13 +205,13 @@
         <p id="contact-form-P">We love hearing from you! Share feedback, questions, or just say hi. <span>💌</span></p>
 
         <form id="contactForm" class="contact-form" action="https://formspree.io/f/xnnbokyp" method="POST">
-          <input type="text" id="name" placeholder="Your Name" required />
+          <input class="contactFormInputs" type="text" id="name" placeholder="Your Name" required />
           <div id="nameError" class="error-msg">Please enter your name.</div>
 
-          <input type="email" id="email" placeholder="Your Email" required />
+          <input class="contactFormInputs" type="email" id="email" placeholder="Your Email" required />
           <div id="emailError" class="error-msg">Please enter a valid email.</div>
 
-          <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+          <textarea class="contactFormInputs" id="message" rows="5" placeholder="Your Message" required></textarea>
           <div id="messageError" class="error-msg">Message cannot be empty.</div>
 
           <button type="submit"><i style="color: #fff" class="ri-send-plane-line"></i> Send Message</button>
@@ -189,10 +243,14 @@
       <section class="hero">
         <div class="container">
           <h2>An Open-Source Icon System for Modern Creators</h2>
-          <p id="secondParaOfHero" style="font-size: 1.5rem; width: max-content; padding-left: 1rem; display: flex;
-          align-items: center;">
-            Beautiful Open-Source Icons for Everyone 
-            <button onclick="document.querySelector('.cdnPopup-modal').style.display='flex'; setTimeout(() => { document.querySelector('.cdnPopup-modal').style.opacity = '1'; }, 200); setTimeout(() => { document.querySelector('.cdnPopup-modal').style.opacity = '0'; setTimeout(() => { document.querySelector('.cdnPopup-modal').style.display = 'none'; }, 1000)  }, 10000);"><i class="lu-command-icon"></i>CDN</button>
+          <p
+            id="secondParaOfHero"
+            style="font-size: 1.5rem; width: max-content; padding-left: 1rem; display: flex; align-items: center">
+            Beautiful Open-Source Icons for Everyone
+            <button
+              onclick="document.querySelector('.cdnPopup-modal').style.display='flex'; setTimeout(() => { document.querySelector('.cdnPopup-modal').style.opacity = '1'; }, 200); setTimeout(() => { document.querySelector('.cdnPopup-modal').style.opacity = '0'; setTimeout(() => { document.querySelector('.cdnPopup-modal').style.display = 'none'; }, 1000)  }, 10000);">
+              <i class="lu-command-icon"></i>CDN
+            </button>
           </p>
           <p style="margin-bottom: 4rem; margin-top: 1.5rem">
             Whether you're a designer, developer, or startup – LuxoraICONS has the perfect icons for your projects.
@@ -215,7 +273,7 @@
         </div>
       </section>
 
-      <section class="search-section">
+      <section class="search-section" id="search-section">
         <div class="container" style="display: flex; align-items: center; justify-content: center; position: relative">
           <i
             class="lu-search-icon search_icon_class"
@@ -246,11 +304,17 @@
           </div>
           <div class="popup-code-options">
             <div class="code-example">
-              <code><i style="font-size: 1.5rem; padding-right: 10px; color:#999" class="lu-code-icon"></i> &lt;i class="<span id="popup-code-class"></span>"&gt;&lt;/i&gt;</code>
+              <code
+                ><i style="font-size: 1.5rem; padding-right: 10px; color: #999" class="lu-code-icon"></i> &lt;i
+                class="<span id="popup-code-class"></span>"&gt;&lt;/i&gt;</code
+              >
               <button style="user-select: none" class="copy-button">Copy</button>
             </div>
             <div class="code-example">
-              <code><i style="font-size: 1.5rem; padding-right: 10px; color:#999" class="lu-terminal-icon"></i><span id="popup-code-unicode"></span></code>
+              <code
+                ><i style="font-size: 1.5rem; padding-right: 10px; color: #999" class="lu-terminal-icon"></i
+                ><span id="popup-code-unicode"></span
+              ></code>
               <button style="user-select: none" class="copy-button">Copy</button>
             </div>
           </div>
@@ -333,7 +397,6 @@
             </p>
             <a
               id="donateDtn"
-              href="#"
               style="
                 user-select: none;
                 display: inline-block;
@@ -347,8 +410,10 @@
                 position: relative;
                 text-decoration: none;
                 box-shadow: 0 4px 10px rgba(255, 60, 60, 0.3);
-                transition: 0.3s;
-              ">
+                transition: 0.3s;"
+              onclick="document.getElementById('supportPopup').style.display = 'flex';
+setTimeout(() => { document.getElementById('supportPopup').style.opacity = '1'; }, 10);
+">
               <span style="font-size: 1.2rem; position: absolute">💎</span> Help Us Grow
             </a>
           </div>
@@ -369,6 +434,7 @@
       </footer>
     </main>
 
+    <!-- <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="luxoraDev" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script> -->
     <script src="./scriptFiles/script.js"></script>
   </body>
 </html>

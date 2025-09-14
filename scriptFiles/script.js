@@ -236,6 +236,7 @@ window.addEventListener("scroll", ()=> {
       const LicenceModal = document.getElementById('licensePopup');
       const AboutModal = document.getElementById('aboutPopup');
       const ContactModal = document.getElementById('contactPopup');
+      const supportPopup = document.getElementById('supportPopup');
       if (event.target === LicenceModal) {
         LicenceModal.style.opacity = "0";
         setTimeout(() => {
@@ -258,6 +259,12 @@ window.addEventListener("scroll", ()=> {
         cdnShowMain_Container.style.opacity = "0";
         setTimeout(() => {
           cdnShowMain_Container.style.display = "none";
+        }, 800);
+      }
+      if (event.target === supportPopup) {
+        supportPopup.style.opacity = "0";
+        setTimeout(() => {
+          supportPopup.style.display = "none";
         }, 800);
       }
     }
@@ -359,3 +366,5 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     this.submit();
   }
 });
+
+
