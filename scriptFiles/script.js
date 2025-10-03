@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
       parseIconsFromCSS(cssText);
     } catch (error) {
       console.error("Error fetching or parsing icons:", error);
-      iconsContainer.innerHTML = "<p>Could not load icons. Please ensure 'luxora-icons.css' is in the correct directory.</p>";
+      iconsContainer.innerHTML = "<p>Could not load icons. Please check your Internet or contact with Luxora Lab.</p>";
     }
   };
 
@@ -368,3 +368,16 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 });
 
 
+// Loading ...
+
+window.addEventListener('load', () => {
+    const loader = document.getElementById('loaderLoding');
+    setTimeout(() => {
+          loader.classList.add('loader-hidden');
+
+    loader.addEventListener('transitionend', () => {
+        loader.style.display = 'none';
+    });
+  });
+
+});
