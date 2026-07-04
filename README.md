@@ -3,15 +3,15 @@
 [![License](https://img.shields.io/badge/license-Custom%20MIT%20+%20Restrictions-blue.svg)](./LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/Yashh-Penchi/luxora-icons.svg?style=social)](https://github.com/Yashh-Penchi/luxora-icons/stargazers)
 
-> A modern, open-source icon library crafted with precision. Lightweight, scalable, and pixel-perfect — built for designers, developers, and startups.
+> A modern, open-source icon library crafted with precision. Lightweight, scalable, and pixel-perfect - built for designers, developers, and startups.
 
 ---
 
 ## ✨ Features
 - 🎯 Free & Open-Source for personal and commercial projects  
-- ⚡ Lightweight & Fast – optimized CSS and SVG  
-- 🎨 Pixel Perfect – looks sharp at any size  
-- 🌍 Easy to use – just copy, paste, and go!  
+- ⚡ Lightweight & Fast - optimized CSS and SVG  
+- 🎨 Pixel Perfect - looks sharp at any size  
+- 🌍 Easy to use - just copy, paste, and go!  
 
 ---
 
