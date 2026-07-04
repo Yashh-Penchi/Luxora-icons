@@ -8,10 +8,10 @@
 ---
 
 ## ✨ Features
-- 🎯 Free & Open-Source for personal and commercial projects  
-- ⚡ Lightweight & Fast - optimized CSS and SVG  
-- 🎨 Pixel Perfect - looks sharp at any size  
-- 🌍 Easy to use - just copy, paste, and go!  
+-  Free & Open-Source for personal and commercial projects  
+-  Lightweight & Fast - optimized CSS and SVG  
+-  Pixel Perfect - looks sharp at any size  
+-  Easy to use - just copy, paste, and go!  
 
 ---
 
