@@ -874,6 +874,18 @@ footer {
   color: #00a3de;
 }
 
+/* PayPal Hosted Button (Support popup) */
+.support-paypal-hosted {
+  grid-column: 1 / -1;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.support-paypal-hosted iframe {
+  max-width: 100%;
+  border: none;
+}
+
 /* License */
 .license-modal {
   opacity: 0;
